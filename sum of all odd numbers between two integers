@@ -1,0 +1,8 @@
+# use this to find the sum of all odd numbers between two given integers
+
+Lista = [] # empty list 
+for all i in range(a, b+1):
+  if (i % 2 == 1): # if i/2 has a remainder of 1
+    lista.append(i) # adds the integer to the list
+    
+print(sum(lista)) # prints the sum of all the numbers in the list 
