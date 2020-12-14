@@ -1,14 +1,14 @@
 #gives the sum of all even numbers in the fibonacci sequence between 1 and 4 million
 
-lista = [] 
-a,b = 1,2 
-while b < 4000000:
-  lista.append(b)
-  a,b = b,a+b
+lista = [] #creates an empty list to be added to
+a,b = 1,2 #gives the first two terms we want to use in the sequence
+while b < 4000000:      
+  lista.append(b) #add b to the list 
+  a,b = b,a+b #add the previous term in the sequence to b
   
-listb = []
-for i in lista:
-  if (i % 2 == 0):
-    listb.append(i)
+listb = [] #new list
+for i in lista: #for a number in the first list
+  if (i % 2 == 0): #if the remainder when dividing by 2 is 0 (even)
+    listb.append(i) #then add it to the new list
    
 print(sum(listb))
