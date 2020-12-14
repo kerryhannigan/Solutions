@@ -1,0 +1,14 @@
+#gives the sum of all even numbers in the fibonacci sequence between 1 and 4 million
+
+lista = [] 
+a,b = 1,2 
+while b < 4000000:
+  lista.append(b)
+  a,b = b,a+b
+  
+listb = []
+for i in lista:
+  if (i % 2 == 0):
+    listb.append(i)
+   
+print(sum(listb))
